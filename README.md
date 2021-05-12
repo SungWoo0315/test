@@ -71,6 +71,14 @@ width="30%">
 
 ### 제목4
 
+테이블 연습.
+
+꽃1 | 꽃2
+------------ | -------------
+장미 1 | 장미2
+구도1 | 구도2
+테스트1 | 테스트2
+![](https://camo.githubusercontent.com/8b7e797ec236a4b5c043f0978f2fc8a640da0d985a9063c5eaadcdd68f93c810/68747470733a2f2f74312e6461756d63646e2e6e65742f6366696c652f626c6f672f393933434645344535443634393738353134) | ![.](image111.jpg)
 
 
 
@@ -79,9 +87,35 @@ width="30%">
 
 #### 제목5
 
+**Task Lists 연습**
+
+- [x] @mentions, #refs, [links](), **formatting**, and <del>tags</del> supported
+- [x] list syntax required (any unordered or ordered list supported)
+- [x] 완료한일
+- [ ] 해야할일
+- [ ] 123
+- [ ] 456
 
 
 
+**Inline code**
+
+I think you should use an
+`<addr>` element here instead.
+
+
+  `dddddd`
+
+`<테스트2>`
+
+
+
+##### 제목6
+
+**As Kanye West said:**
+
+> We're living the future so
+> the present is our past.
 
 
 
