@@ -203,7 +203,7 @@ C:\Users\kosmo\My Documents>java -cp C:\Users\KOSMO kosmo.MyName
 
 #
 
-커맨드라인
+## 커맨드라인
 
 `dir`
 
@@ -370,11 +370,102 @@ kosmo, 계속하시겠습니까(Y/N)? y
 
 
 
+----
+
+## 재실습
+
+파일 옮긴 뒤 재 실습.
 
 
+```cmd
+
+새로 컴파일
+
+C:\Users\kosmo\Desktop\Work>javac -d . MyName.java  
+C:\Users\kosmo\Desktop\Work>javac -d . HelloJava.java
+
+새로 java 실행
+
+C:\Users\kosmo\Desktop\Work>java -cp . hello.HelloJava
+Hello, Java
+안녕, java
+
+C:\Users\kosmo\Desktop\Work>java -cp . kosmo.MyName
+내 이름은 Kosmo 입니다
+```  
 
 
+## 실습 2
 
+```
+메인클래스. 하나의 패키지에서 하나의 클래스.
+
+패키지를 기준으로.
+```
+
+- 한꺼번에 컴파일 
+
+- 과제
+
+```
+자바 패키지 실습2  
+
+• 작업디렉토리: Desktop\Work\   
+  – 작업디렉토리: Desktop\Work\mystudent\
+  
+• Main Class name: MyStudent   
+– Package name: kosmo   
+– 결과 출력:     
+	• “kosmo 학생입니다”   
+
+• Class name: Summary 
+– Package name: kosmo
+
+• MyStudent, Summary 컴파일하고 Main class를 실행하시오  
+```
+
+```java
+
+메모장 소스코드 작성
+
+메인클래스 MyStudent 작성한것.
+
+package kosmo;
+
+public class MyStudent {
+
+	public static void main(String[] args) {
+		System.out.println("kosmo 학생입니다");
+	}
+}
+
+클래스 Summary 작성한것.
+
+package kosmo;
+
+public class Summary {
+	// To do
+}
+
+```
+
+
+```cmd
+한꺼번에 컴파일 실행.
+
+C:\Users\kosmo\Desktop\Work>javac -d . MyStudent.java Summary.java
+```
+
+> 컴파일이 정상적으로 됨.  
+
+```cmd
+C:\Users\kosmo\Desktop\Work>java -cp . kosmo.MyStudent
+kosmo 학생입니다
+```
+
+> Main class도 정상적으로 실행 됨.
+
+#
 
 
 
