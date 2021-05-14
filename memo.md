@@ -347,7 +347,7 @@ C:\Users\kosmo>dir /s *.java
 
 #
 
-`move` 파일 이동
+`move` : 파일을 이동
 
 ```cmd
 C:\Users\kosmo>move *.java Desktop\Work
@@ -367,6 +367,18 @@ kosmo, 계속하시겠습니까(Y/N)? y
 
 > 하위 폴더까지 여러개 삭제. 휴지통에 가지 않음으로 주의 필요.
 > 
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
