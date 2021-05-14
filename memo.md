@@ -535,6 +535,270 @@ Window -> Preperences -> encoding 검색 -> 각탭 부분에서 text file encodi
 ex) 리눅스 환경에서 그대로 사용할수 있음.
 
 
+#
+
+- 변수  : 저장할 공간의 이름.
+
+```java
+이클립스 실습 (변수 선언하여 사용하기) 책 45p
+
+package chapter2;
+
+public class Variable1 {
+
+	public static void main(String[] args) {
+		// type : primitive type, object type(class)
+		
+		int level;			//정수형 변수 level을 선언
+		level = 10;			//level 변수에 값 10을 대입
+		System.out.println(level);	//level 값 출력
+
+	}
+
+}
+```
+
+#
+
+```java
+package chapter2;
+
+public class Variable1 {
+
+	public static void main(String[] args) {
+		// type : primitive type, object type(class)
+		
+		int level;			//정수형 변수 level을 선언
+		level = 10;			//level 변수에 값 10을 대입
+		System.out.println(level);	//level 값 출력
+
+		System.out.println("Hello, Java"); //"Hello, Java" <---객체이다.
+		
+		//primitive type 을 다 제외하고 숫자이다.
+		
+//52p 참고
+//		String str = "Hello, java";
+//		String str = new String("Hello, java")
+		//위의 System.out.println("Hello, Java"); 과 같은것 ( 61p 리터럴형 )
+		
+	}
+
+}
+
+```
+#
+
+
+level 값을 `//주석처리` 해서 나온 에러.
+
+```java
+Exception in thread "main" java.lang.Error: Unresolved compilation problem: 
+	The local variable level may not have been initialized
+
+	at chapter2.Variable1.main(Variable1.java:10)
+```
+
+> 메모리에 배정된 값이 없어서 생긴 `Exception Error` -> `not have been initialized` 이다.
+
+
+
+
+
+#
+
+추가사항
+
+```java
+package chapter2;
+
+public class Variable1 {
+
+	public static void main(String[] args) {
+		// type : primitive type, object type(class)
+		
+		int level;			//정수형 변수 level을 선언
+		level = 10;			//level 변수에 값 10을 대입
+							//숫자 리터럴
+		
+		
+		System.out.println(level);	//level 값 출력
+
+		System.out.println("Hello, Java"); //"Hello, Java" <---객체이다.
+		
+		//primitive type 을 다 제외하고 숫자이다.
+		
+//52p 참고
+//		String str = "Hello, java";    //문자 리터럴
+//		String str = new String("Hello, java")  // new operator
+		
+		//위의 두가지랑 System.out.println("Hello, Java");은 같은것 ( 61p 리터럴형 )
+		//원래는 new가 들어가야 하지만 ...  (45~46p)
+		
+
+		// 2. 변수이름 사용
+		int q_level;
+		int count100;
+		int _master;
+		int $won;
+		
+		int !won;
+		
+		int 27day;
+		int 1abc;
+		
+		int package;
+		int new;
+		int class;
+	
+		
+		
+		
+	}
+
+}
+```
+
+> 변수이름 사용항목들 이클립스에서 보면 에러 사항을 볼 수 있다.
+> 
+
+#
+
+추가설명  
+
+```java
+package chapter2;
+
+public class Variable1 {
+
+	public static void main(String[] args) {
+		// type : primitive type, object type(class)
+		
+		int level;			//정수형 변수 level을 선언
+		level = 10;			//level 변수에 값 10을 대입
+							//숫자 리터럴
+		
+		
+		System.out.println(level);	//level 값 출력
+
+		System.out.println("Hello, Java"); //"Hello, Java" <---객체이다.
+		
+		//primitive type 을 다 제외하고 숫자이다.
+		
+//52p 참고
+//		String str = "Hello, java";    //문자 리터럴
+//		String str = new String("Hello, java")  // new operator
+		
+		//위의 두가지랑 System.out.println("Hello, Java");은 같은것 ( 61p 리터럴형 )
+		//원래는 new가 들어가야 하지만 ...  (45~46p)
+		
+
+		/* 2. 변수이름 사용
+		int q_level;
+		int count100;
+		int _master;
+		int $won;
+		
+		int !won;
+		
+		int 27day;
+		int 1abc;
+		
+		int package;
+		int new;
+		int class;
+		*/ //주석처리를 해제하고 이클립스에서 보면 에러 이유를 확인 할 수 있다.
+		
+		
+		// 의미있는 변수 선업!
+		
+		/*int ns;					// 학생수
+		int numberOfStudent;	// 학생수
+		
+		int studentIsGraduated; // 졸업여부?
+		*/
+		
+		//소문자로 시작 다음문장 시작 접속어 앞부분은 대문자. ->> 카멜 표기법.
+		
+	}
+
+}
+```
+
+#
+
+## 마지막교시 실습
+
+```java
+package hello;
+
+public class SizeOfTypes {
+
+	public static void main(String[] args) {
+		// byte -> Byte
+		System.out.println("byte 크기: " + (Byte.SIZE/8) + "Bytes"); // primitive type 마다 클래스 크기 정의가 있다.
+		// Int -> Integer
+		// Short -> Short
+		// Long
+		// Character
+		// Float
+		// Double
+
+		System.out.println("Int 크기: " + (Integer.SIZE/8) + "Bytes");
+		
+		System.out.println("Short 크기: " + (Short.SIZE/8) + "Bytes");
+		
+		System.out.println("Long 크기: " + (Long.SIZE/8) + "Bytes");
+		
+		System.out.println("Char 크기: " + (Character.SIZE/8) + "Bytes");
+		
+		System.out.println("Float 크기: " + (Float.SIZE/8) + "Bytes");
+		
+		System.out.println("Double 크기: " + (Double.SIZE/8) + "Bytes");
+	
+		
+		// 책 49p 실습.
+	}
+
+}
+```
+
+
+
+과제 (숙제) 
+
+운영체계
+
+1. 메모리  
+2. 프로세스  
+
+자료를 찾아 공부하고, 공부한 내용을
+
+각 2장씩 요약 설명.
+
+ppt, word 무방 , 깃허브 페이지링크도 무방
+
+5/16 12:00까지
+
+강사 이메일로 전송
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
