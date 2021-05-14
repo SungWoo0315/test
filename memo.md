@@ -496,7 +496,9 @@ OS,
 - 메모리가 부족하면 대기열 발생  
 - OS가 메모리 관리 (Process Management)   
 - 모든 io 는 FileSystem에서 관리  
-- 
+- [jvm 성능관련](https://www.holaxprogramming.com/2017/10/09/java-jvm-performance/)  
+
+
 
 
 - 이클립스 다운  
@@ -509,17 +511,28 @@ Eclipse IDE for Java Developers
 java SE : 일반사용자용  
 java EE : 엔터프라이즈용 (보안관련 추가)  
 
+#
 
 이클립스 
 
 > 이클립스 설치 후 둘러보기.  
+> 
+
+[이클립스 설치](https://www.eclipse.org/downloads/packages/)  
 
 컨트롤+스페이스 --> JRE 보조.
 
 package Expolor 창에서 -> 파일 오른쪽버튼 -> properties -> text file encoding  
 기본은 윈도우용 MS949
 
-워크스페이스를 유니코드로 미리 해놓으면 다른환경에서 이상이 없음.
+워크스페이스를 유니코드로 미리 해놓으면 다른환경에서 이상이 없음. 
+
+```- 설정방법
+Window -> Preperences -> encoding 검색 -> 각탭 부분에서 text file encoding 부분항목들을 UTF-8로 각각 변경해준다.
+
+```
+
+ex) 리눅스 환경에서 그대로 사용할수 있음.
 
 
 
