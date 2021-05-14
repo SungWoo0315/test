@@ -1,4 +1,4 @@
-```cmd
+```java
 //package hello;
 //공백: white space ( 줄바꿈, 스페이스, 탭...)
 public class HelloJava {
@@ -18,7 +18,7 @@ public class HelloJava {
 
 영역 /* */
 
-```cmd
+```java
 /* package hello;
  공백: white space ( 줄바꿈, 스페이스, 탭...) */
 
