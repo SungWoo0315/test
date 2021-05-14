@@ -68,7 +68,7 @@ or a JavaFX application class must extend javafx.application.Application
 `;` 세미콜론 줄막음, 
 
 
-`package` 들어갔을 경우
+주석처리를 제거하고 `package`가 들어갔을 경우
 
 ```cmd
 C:\Users\kosmo>javac HelloJava.java
@@ -117,7 +117,7 @@ Hello, Java
 안녕, java
 ```
 
-#
+----
 
 ## 실습
 
@@ -397,10 +397,18 @@ C:\Users\kosmo\Desktop\Work>java -cp . kosmo.MyName
 
 ## 실습 2
 
-```
+```  
 메인클래스. 하나의 패키지에서 하나의 클래스.
 
 패키지를 기준으로.
+
+`public` 클래스는 두개이상 들어가면 안됨. `public`은 없어도 무방하긴 함.
+
+패키지 하나에 하나의 클래스.
+
+자바의 버전업에 따라서 달라짐.
+
+버전업에 따라 문법체계가 달라짐.  
 ```
 
 - 한꺼번에 컴파일 
@@ -473,7 +481,11 @@ kosmo 학생입니다
 
 OS, 
 
+컴퓨터구조 등 따로 공부해보기
+
 #
+
+----
 
 
 
