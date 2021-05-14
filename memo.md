@@ -119,11 +119,39 @@ Hello, Java
 
 #
 
+## 실습
 
+패키지 지정 실습
 
+- 메모장에 소스코드 작성.
 
+```java
+package kosmo;
 
+public class MyName {
+	public static void main(String[] args) {
+		System.out.println("내 이름은 Kosmo 입니다");
+	}
+}
+```
 
+#
+
+- `cmd`에서 `javac`로 컴파일 후 `java`로 실행.
+
+```cmd
+C:\Users\kosmo>javac -d . MyName.java
+
+C:\Users\kosmo>java -cp . kosmo.MyName
+내 이름은 Kosmo 입니다
+
+```
+
+`C:\Users\kosmo` 밑에 `kosmo` 폴더가 생성되고 그 밑에 `MyName.class` 가 생성 됨.
+
+올바르게 출력되는것을 볼 수 있다.
+
+#
 
 
 
