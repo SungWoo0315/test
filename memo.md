@@ -151,6 +151,9 @@ C:\Users\kosmo>java -cp . kosmo.MyName
 
 올바르게 출력되는것을 볼 수 있다.
 
+> -d : package에서 정한 디렉토리 생성  
+> -cp : classpath 클래스 위치 지정
+
 #
 
 
