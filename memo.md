@@ -762,7 +762,21 @@ public class SizeOfTypes {
 }
 ```
 
+- 위의 소스를 실행한 결과 값.
 
+```cmd
+C:\Users\kosmo\eclipse-workspace\FirstProject\bin>java -cp . hello.SizeOfTypes
+byte 크기: 1Bytes
+Int 크기: 4Bytes
+Short 크기: 2Bytes
+Long 크기: 8Bytes
+Char 크기: 2Bytes
+Float 크기: 4Bytes
+Double 크기: 8Bytes
+```
+
+
+----
 
 과제 (숙제) 
 
